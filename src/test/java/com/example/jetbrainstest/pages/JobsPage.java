@@ -6,8 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class JobsPage {
+
+    private final Logger LOG = LoggerFactory.getLogger(JobsPage.class);
 
     WebDriver driver;
 
@@ -18,7 +22,7 @@ public class JobsPage {
     private WebElement jobRoles;
 
     public Boolean checkDream() {
-        System.out.println("Проверка активности кнопки *Find*Your*Dream*Job*");
+        LOG.info("Проверка активности кнопки *Find*Your*Dream*Job*");
         return findYourDreamJob.isEnabled();
     }
 
