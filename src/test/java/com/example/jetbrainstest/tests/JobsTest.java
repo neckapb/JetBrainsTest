@@ -24,11 +24,4 @@ public class JobsTest extends BaseTest {
     public void buttonCheck() {
         assertTrue(JobsPage.checkDream(), "Кнопка не активна");
     }
-/*
-    @Test
-    @DisplayName("Проверка, что списке вакансий есть Software Developer")
-    public void buttonClick() {
-        JobsPage.checkDreamInList();
-    }
- */
 }
