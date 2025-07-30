@@ -1,5 +1,6 @@
 package com.example.jetbrainstest.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ public class JobsPage {
     @FindBy(css = "._button_937yxw_133")
     private WebElement jobRoles;
 
+    @Step("Проверка активности кнопки *Find*Your*Dream*Job*")
     public Boolean checkDream() {
         LOG.info("Проверка активности кнопки *Find*Your*Dream*Job*");
         return findYourDreamJob.isEnabled();
